@@ -1,0 +1,107 @@
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 63px;
+  @include media-breakpoint-down(lg) {
+    padding-left: 75px;
+  }
+  @include media-breakpoint-down(md) {
+    height: 56px;
+    border-bottom: 1px solid rgba(255,255,255,0.25);
+  }
+  @include media-breakpoint-down(xs) {
+    flex-flow: row nowrap;
+    justify-content: space-around;
+  }
+  .b-left, .b-right {
+    width: 370px;
+    @include media-breakpoint-down(lg) {
+      width: auto;
+    }
+  }
+  .b-right {
+    text-align: right;
+    margin: 0;
+    @include media-breakpoint-down(xs) {
+      padding-right: 10px;
+      max-width: 130px;
+      width: 35vw;
+    }
+  }
+  .logo, .logo-text {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 170px;
+    width: auto;
+    @include media-breakpoint-down(sm) {
+      max-width: 150px;
+    }
+    @include media-breakpoint-down(xs) {
+      width: 90%;
+      max-width: 120px;
+      white-space: nowrap;
+    }
+
+  }
+  .logo-text {
+    max-width: none;
+    border-left: 1px solid rgba(255,255,255,0.5);
+    color: #fff;
+    @include text-norm(13px);
+    padding-left: 20px;
+    margin-left: 20px;
+    @include media-breakpoint-down(sm) {
+      font-size: 12px;
+      padding-left: 12px;
+      margin-left: 12px;
+    }
+    @include media-breakpoint-down(xs) {
+      border: none;
+      display: block;
+      font-size: 10px;
+      text-align: right;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+.phone {
+  display: inline-block;
+  color: #fff;
+  @include text-bold(16px);
+  text-decoration: none;
+  white-space: nowrap;
+  padding-left: 30px;
+  background: url("../img/ico/i-phone.svg") no-repeat left center;
+  background-size: 16px;
+
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  @include media-breakpoint-down(sm) {
+    font-size: 13px;
+  }
+  @include media-breakpoint-down(xs) {
+    @include text-norm(3.5vw);
+    padding-left: 0;
+    background: none;
+
+  }
+}
+.mail {
+  display: inline-block;
+  color: #fff;
+  @include text-norm(13px);
+  padding-left: 30px;
+  background: url("../img/ico/i-mail.svg") no-repeat left center;
+  background-size: 16px;
+  &:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+}

@@ -1,0 +1,49 @@
+$color-placeholder: #363636;
+$color-input: #363636;
+.user-input {
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: inset 0px 0px 15px 0px rgba(0,0,0, 0.1);
+  height: 70px;
+  padding: 0 30px;
+  margin: 0;
+  outline: none;
+  color: $color-input;
+  @include text-light(15px);
+  line-height: 70px;
+  @include media-breakpoint-down(sm) {
+    height: 50px;
+    line-height: 50px;
+    font-size: 13px;
+  }
+  &.textarea {
+    height: 175px;
+    line-height: 1.5;
+    padding: 20px 30px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    @include media-breakpoint-down(md) {
+      margin-bottom: 10px;
+    }
+  }
+}
+.label-input {
+  @include text-bold(14px);
+  color: rgba(152,152,152,0.7);
+  padding-bottom: 20px;
+  @include media-breakpoint-down(sm) {
+    font-size: 12px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+}
+
+::-webkit-input-placeholder {color:$color-placeholder;opacity: 0.7;}
+::-moz-placeholder          {color:$color-placeholder;opacity: 0.7;}/* Firefox 19+ */
+:-moz-placeholder           {color:$color-placeholder;opacity: 0.7;}/* Firefox 18- */
+:-ms-input-placeholder      {color:$color-placeholder;opacity: 0.7;}
+

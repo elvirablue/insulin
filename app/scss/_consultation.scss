@@ -1,0 +1,50 @@
+.consultation-bg {
+  min-height: 592px;
+  background: url("../img/bg-2.jpg") no-repeat top center;
+  background-size: cover;
+  padding-bottom: 40px;
+  @include media-breakpoint-down(md) {
+    min-height: auto;
+    padding-bottom: 70px;
+  }
+  @include media-breakpoint-down(sm) {
+    padding-bottom: 50px;
+  }
+}
+.consultation {
+  text-align: center;
+  h2 {
+    padding-top: 100px;
+    p.after {
+      font-size: 31px;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    h2 {
+      padding-top: 70px;
+      p.after {
+        font-size: 20px;
+      }
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    h2 {
+      padding-top: 20px;
+      p.after {
+        font-size: 14px;
+      }
+    }
+    .button.gray {
+      width: 100%;
+      max-width: 275px;
+    }
+  }
+  @include media-breakpoint-down(xs) {
+    .button.gray {
+      width: 100%;
+      margin-left: 0!important;
+      margin-right: 0!important;
+    }
+
+  }
+}

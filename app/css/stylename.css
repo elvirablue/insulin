@@ -1,0 +1,47 @@
+
+@font-face {
+    font-family: 'circe-light';
+    src: url('../fonts/Circe-Light.eot');
+    src: url('../fonts/Circe-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Circe-Light.woff') format('woff'),
+    url('../fonts/Circe-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'circe-regular';
+    src: url('../fonts/Circe-Regular.eot');
+    src: url('../fonts/Circe-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Circe-Regular.woff') format('woff'),
+    url('../fonts/Circe-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'circle-bold';
+    src: url('../fonts/Circe-Bold.eot');
+    src: url('../fonts/Circe-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Circe-Bold.woff') format('woff'),
+    url('../fonts/Circe-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'circle-exbold';
+    src: url('../fonts/Circe-ExtraBold.eot');
+    src: url('../fonts/Circe-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Circe-ExtraBold.woff') format('woff'),
+    url('../fonts/Circe-ExtraBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'museo';
+    src: url(../fonts/MuseoSansCyrl.otf) format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}

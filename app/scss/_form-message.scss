@@ -1,0 +1,160 @@
+.form-message-bg {
+  height: auto;
+  min-height: 780px;
+  background: url("../img/bg-4.png") no-repeat top center  #e5eff6;
+  background-size: cover;
+  @include media-breakpoint-down(lg) {
+    min-height: auto;
+  }
+}
+.form-message {
+  h2 {
+    max-width: 680px;
+    margin: 50px auto 0;
+  }
+  .back-bg {
+    display: block;
+    width: 900px;
+    height: auto;
+    min-height: 450px;
+    padding: 0 30px;
+    margin-left: 270px;
+    margin-top: 70px;
+    position: relative;
+    z-index: 1;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: rgb(247, 251, 254);
+    box-shadow: 0px 28px 65px 0px rgba(200, 206, 212, 0.64);
+    @include media-breakpoint-down(lg) {
+      width: calc(100% - 230px);
+      margin-left: 230px;
+    }
+    @include media-breakpoint-down(md) {
+      width: calc(100% - 220px);
+      margin-left: 200px;
+    }
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      padding-top: 30px;
+      box-shadow: none;
+      background: none;
+    }
+  }
+  .b-sale {
+    width: 330px;
+    height: 330px;
+    background: url("../img/bg-sale.png") top left no-repeat #fff;
+    background-size: contain;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: absolute;
+    z-index: 2;
+    left: -270px;
+    top: 60px;
+    text-align: center;
+    padding-top: 100px;
+    padding-right: 30px;
+    .title {
+      @include text-exbold(22px);
+      letter-spacing: 1px;
+      background: linear-gradient(to right, rgb(0,118,185) 0%, rgb(0,188,236) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-transform: uppercase;
+    }
+    .text-1 {
+      @include text-norm(16px);
+      padding-top: 20px;
+      @include media-breakpoint-down(md) {
+        font-size: 14px;
+        padding-top: 5px;
+      }
+    }
+    .text-3 {
+      @include text-norm(16px);
+      padding-top: 25px;
+      color: #0090c0;
+      @include media-breakpoint-down(md) {
+        font-size: 14px;
+        padding-top: 15px;
+      }
+    }
+    .text-2 {
+      @include text-exbold(45px);
+      font-weight: bold;
+      padding-top: 15px;
+      @include media-breakpoint-down(md) {
+        font-size: 32px;
+        padding-top: 10px;
+      }
+    }
+    @include media-breakpoint-down(lg) {
+      width: 280px;
+      height: 300px;
+      left: -230px;
+    }
+    @include media-breakpoint-down(md) {
+      padding-top: 80px;
+      padding-right: 15px;
+      width: 240px;
+      height: 250px;
+      left: -200px;
+    }
+    @include media-breakpoint-down(sm) {
+      position: static;
+        padding-left: 15px;
+      border-radius: 10px;
+      margin: 0 auto 20px;
+      box-shadow: 0px 28px 65px 0px rgba(200, 206, 212, 0.64);
+      }
+  }
+  .b-form {
+    height: auto;
+    min-height: 440px;
+    padding: 40px 65px 20px;
+    position: absolute;
+    top: -30px;
+    left: 30px;
+    right: 30px;
+    bottom: 0;
+    z-index: 3;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 28px 65px 0px rgba(200, 206, 212, 0.64);
+    .text {
+      @include text-norm(18px);
+      padding-top: 20px;
+      @include media-breakpoint-down(md) {
+        font-size: 16px;
+      }
+    }
+    .button {
+      display: flex;
+      margin: 38px auto 0;
+      width: 100%;
+      max-width: 450px;
+    }
+    @include media-breakpoint-down(md) {
+      padding: 10px 35px 30px;
+      .button {
+        margin-top: 20px;
+      }
+    }
+    @include media-breakpoint-down(sm) {
+      position: static;
+      max-width: 450px;
+      margin: 0 auto;
+      padding: 10px 15px 30px;
+
+    }
+  }
+}
+
+
+
+
+

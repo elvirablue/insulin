@@ -1,0 +1,62 @@
+.main-footer {
+  display: block;
+  min-height: $height-footer;
+  margin-top: -$height-footer;
+  .b-first {
+    height: 160px;
+    align-items: center;
+    @include media-breakpoint-down(sm) {
+      height: 240px;
+    }
+  }
+  .b-gray {
+    height: 48px;
+    background-color: #dbdbdb;
+    padding-top: 16px;
+    @include media-breakpoint-down(sm) {
+      height: 70px;
+    }
+    .text, .link {
+      font-size: 12px;
+      @include media-breakpoint-down(sm) {
+        margin-bottom: 5px;
+        font-size: 11px;
+      }
+    }
+  }
+  .logo {
+    img {
+      margin-bottom: 10px;
+    }
+  }
+
+  .text, .link {
+    @include text-norm(14px);
+    color: $color-gray;
+    span {
+      display: block;
+      padding-bottom: 15px;
+      font-size: 12px;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: 12px;
+    }
+    @include media-breakpoint-down(sm){
+      span {
+        padding-bottom: 5px;
+        font-size: 10px;
+      }
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    text-align: center;
+    padding-top: 10px;
+  }
+  @include media-breakpoint-down(xs) {
+    min-height: $height-footer-xs;
+    margin-top: -$height-footer-xs;
+    .text {
+      margin-bottom: 20px;
+    }
+  }
+}
