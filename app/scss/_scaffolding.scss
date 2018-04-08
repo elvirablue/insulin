@@ -99,6 +99,20 @@ ul.list-yellow {
     }
   }
 }
+.strike {
+  display: inline-block;
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #fbcf6e;
+  }
+}
 .text-marker {
   @include text-bold(14px);
   font-weight: normal;
@@ -192,6 +206,12 @@ span.text-bg-blue {
   display: inline-block;
   background-color: #5bb4dc;
   padding: 0 8px 4px;
+}
+.text-bg-yellow {
+  display: inline-block !important;
+  width: auto;
+  background-color: #fdc432;
+  padding: 0 12px 10px;
 }
 
 textarea {

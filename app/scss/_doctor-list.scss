@@ -1,0 +1,52 @@
+.doctor-list-bg {
+  //background-color: $color-bg-light;
+  margin-top: -110px;
+  padding-bottom: 100px;
+  position: relative;
+  z-index: 1;
+}
+.doctor-list {
+  h2 {
+    margin-top: 200px;
+  }
+
+
+}
+
+.doctor-item {
+  padding: 60px 20px 20px;
+  text-align: center;
+  @include media-breakpoint-down(sm) {
+    padding: 40px 10px 0;
+  }
+  img {
+    width: 200px;
+    @include media-breakpoint-down(md) {
+      width: 180px;
+    }
+    @include media-breakpoint-down(sm) {
+      width: 150px;
+    }
+  }
+  .name {
+    @include text-bold(24px);
+    padding-top: 10px;
+    @include media-breakpoint-down(sm) {
+      font-size: 20px;
+    }
+  }
+  .text-1 {
+    color: #067bb7;
+    font-size: 14px;
+    padding-top: 15px;
+  }
+  .text-2 {
+    color: #999;
+    font-size: 16px;
+    padding-top: 15px;
+    @include media-breakpoint-down(sm) {
+      font-size: 14px;
+    }
+  }
+
+}

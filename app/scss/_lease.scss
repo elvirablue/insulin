@@ -3,6 +3,9 @@
   min-height: 740px;
   background: url("../img/bg-6.jpg") no-repeat top center;
   background-size: cover;
+  &.doctor {
+    min-height: auto;
+  }
   @include media-breakpoint-down(lg) {
     min-height: auto;
   }
@@ -76,8 +79,42 @@
         width: 100%;
         max-width: 450px;
       }
-
-
+    }
+  }
+  &.doctor {
+    .button.yellow {
+      display: flex;
+      margin: 30px auto;
+      width: 405px;
+      max-width: none;
+      font-size: 15px;
+      @include media-breakpoint-down(sm) {
+        width: 100%;
+        font-size: 12px;
+        line-height: 1.5;
+        margin: 10px auto;
+      }
+    }
+    .partner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include text-light(18px);
+      padding: 50px 0;
+      color: #fff;
+      span {
+        display: inline-block;
+        padding-right: 40px;
+        font: inherit;
+        color: inherit;
+      }
+      @include media-breakpoint-down(sm) {
+        flex-flow: column wrap;
+        font-size: 14px;
+        span {
+          padding-bottom: 20px;
+        }
+      }
     }
   }
 }

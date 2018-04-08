@@ -8,12 +8,103 @@
   &.null {
     min-height: 126px;
   }
+  &.doctor, &.stock {
+    min-height: 906px;
+    background: url("../img/bg-fs-2.jpg") no-repeat top center;
+    background-size: cover;
+    h2 {
+      width: 860px;
+      margin: 90px auto 50px;
+      span.text-bg-blue {
+        font-family: 'circle-exbold', Verdana, Geneva, sans-serif;
+        background-color: #1ea0c5;
+      }
+    }
+    @include media-breakpoint-down(md) {
+      min-height: 600px;
+      h2 {
+        margin: 60px 0;
+        width: 100%;
+      }
+    }
+    @include media-breakpoint-down(sm) {
+      min-height: auto;
+      padding-bottom: 150px;
+      h2 {
+        margin: 40px 0;
+      }
+    }
+  }
+  &.stock {
+    @include media-breakpoint-down(md) {
+      min-height: 880px;
+    }
+    @include media-breakpoint-down(sm) {
+      min-height: auto;
+    }
+    @include media-breakpoint-down(xs) {
+      padding-bottom: 200px;
+    }
+  }
   @include media-breakpoint-down(md) {
     min-height: auto;
   }
   @include media-breakpoint-down(xs) {
-    padding-bottom: 60px;
+    padding-bottom: 100px;
     background-position: -100px top ;
+  }
+  .text-stock {
+    @include text-bold(24px);
+    color: #fff;
+    text-align: left;
+    padding: 0 0 20px 90px;
+    @include media-breakpoint-down(sm) {
+      font-size: 18px;
+      padding: 0 0 10px 50px;
+    }
+  }
+  .list {
+    text-align: left;
+    padding-left: 60px;
+    @include media-breakpoint-down(lg) {
+      width: 60vw;
+    }
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+      padding-left: 10px;
+    }
+    p {
+      @include text-norm(16px);
+      padding-bottom: 25px;
+      color: #fff;
+      padding-left: 40px;
+      b {
+        display: block;
+        @include text-bold(18px);
+        position: relative;
+      }
+      @include media-breakpoint-down(md) {
+        font-size: 14px;
+        b {
+          font-size: 16px;
+        }
+      }
+      .number {
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-left: -40px;
+        border-radius: 50%;
+        background-color: #fdc432;
+        color: #477db8;
+        font-family: 'circle-bold', Verdana, Geneva, sans-serif;
+        font-size: 16px;
+        text-align: center;
+        line-height: 28px;
+      }
+    }
   }
 
   h1 {

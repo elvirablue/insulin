@@ -7,7 +7,7 @@ $color-input: #363636;
   border: none;
   border-radius: 5px;
   background-color: #fff;
-  box-shadow: inset 0px 0px 15px 0px rgba(0,0,0, 0.1);
+  box-shadow: inset 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
   height: 70px;
   padding: 0 30px;
   margin: 0;
@@ -31,9 +31,17 @@ $color-input: #363636;
     }
   }
 }
+
+.area-text {
+  position: absolute;
+  @extend .label-input;
+  top: 40px;
+  left: 30px;
+}
+
 .label-input {
   @include text-bold(14px);
-  color: rgba(152,152,152,0.7);
+  color: rgba(152, 152, 152, 0.7);
   padding-bottom: 20px;
   @include media-breakpoint-down(sm) {
     font-size: 12px;
@@ -42,8 +50,25 @@ $color-input: #363636;
   }
 }
 
-::-webkit-input-placeholder {color:$color-placeholder;opacity: 0.7;}
-::-moz-placeholder          {color:$color-placeholder;opacity: 0.7;}/* Firefox 19+ */
-:-moz-placeholder           {color:$color-placeholder;opacity: 0.7;}/* Firefox 18- */
-:-ms-input-placeholder      {color:$color-placeholder;opacity: 0.7;}
+::-webkit-input-placeholder {
+  color: $color-placeholder;
+  opacity: 0.7;
+}
+
+::-moz-placeholder {
+  color: $color-placeholder;
+  opacity: 0.7;
+}
+
+/* Firefox 19+ */
+:-moz-placeholder {
+  color: $color-placeholder;
+  opacity: 0.7;
+}
+
+/* Firefox 18- */
+:-ms-input-placeholder {
+  color: $color-placeholder;
+  opacity: 0.7;
+}
 

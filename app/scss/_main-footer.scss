@@ -2,6 +2,9 @@
   display: block;
   min-height: $height-footer;
   margin-top: -$height-footer;
+  &.bg-light {
+    background-color: $color-bg-light-footer;
+  }
   .b-first {
     height: 160px;
     align-items: center;

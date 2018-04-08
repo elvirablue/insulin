@@ -1,13 +1,18 @@
 #menu {
   position: fixed;
-  left: 50%;
-  margin-left: -585px;
+  left: 0;
+  margin-left: 0;
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+  //left: 50%;
+  //margin-left: -585px;
   top: 30%;
   z-index: 900;
-  @include media-breakpoint-down(lg) {
-    left: 0;
-    margin-left: 0;
-  }
+  //@include media-breakpoint-down(lg) {
+  //  left: 0;
+  //  margin-left: 0;
+  //}
   ul {
     li {
       list-style: none;
