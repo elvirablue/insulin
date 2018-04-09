@@ -1,3 +1,10 @@
+.bg-gradient {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  background-color: rgb(0,118,185);
+  background-image: radial-gradient(rgb(0,188,236) 30%, rgb(0,118,185) 100%);
+}
 .fs-bg {
   //height: 100vh;
   height: auto;
