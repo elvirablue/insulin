@@ -226,7 +226,6 @@
         }
       }
     }
-
     .text-hover {
       display: block;
       height: 0;
@@ -360,6 +359,9 @@
             @include text-bold(16px);
           }
         }
+      }
+      .input-count {
+        margin-bottom: 30px;
       }
       .button {
         width: 255px;

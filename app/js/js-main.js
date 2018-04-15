@@ -2,6 +2,12 @@ $(document).on('ready', function () {
     $("input[name^='user-phone']").mask("+7 (999) 999 - 9999");
     $('.scrollbar-inner').scrollbar();
 
+    $('.input-group .btn').click(function (e) {
+        var val = parseInt($(this).parents('.input-group').find('input').val());
+        $(this).hasClass('btn-minus') ? (val <= 0 ? val = 0 : val --) : (val < 0 ? val = 0 : val ++);
+        $(this).parents('.input-group').find('input').val(val);
+    });
+
     $('.user-input.textarea').focusin(function () {
         $('.area-text').hide();
     }) ;

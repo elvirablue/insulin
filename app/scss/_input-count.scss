@@ -1,0 +1,33 @@
+.input-count {
+  width: 110px;
+  .input-group {
+    border: 1px solid #e4e4e4;
+    border-radius: 5px;
+    overflow: hidden;
+    .btn {
+      @include text-norm(16px);
+      color: #666;
+      background-color: #fff;
+      border: none;
+      outline: none;
+      box-shadow: none;
+      position: relative;
+      z-index: 10;
+      @include hover-focus-active {
+        box-shadow: none;
+        color: #0f499a;
+        border: none;
+        outline: none;
+      }
+    }
+    input {
+      border: none;
+      outline: none;
+      box-shadow: none;
+      background-color: #f3f3f3;
+      @include text-norm(14px);
+      color: #333;
+      margin-right: -30px;
+    }
+  }
+}

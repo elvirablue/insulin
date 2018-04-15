@@ -6073,6 +6073,37 @@ a {
   color: #363636;
   opacity: 0.7; }
 
+.input-count {
+  width: 110px; }
+  .input-count .input-group {
+    border: 1px solid #e4e4e4;
+    border-radius: 5px;
+    overflow: hidden; }
+    .input-count .input-group .btn {
+      font-family: 'circle-regular', Verdana, Geneva, sans-serif;
+      font-size: 16px;
+      color: #666;
+      background-color: #fff;
+      border: none;
+      outline: none;
+      box-shadow: none;
+      position: relative;
+      z-index: 10; }
+      .input-count .input-group .btn:hover, .input-count .input-group .btn:focus, .input-count .input-group .btn:active {
+        box-shadow: none;
+        color: #0f499a;
+        border: none;
+        outline: none; }
+    .input-count .input-group input {
+      border: none;
+      outline: none;
+      box-shadow: none;
+      background-color: #f3f3f3;
+      font-family: 'circle-regular', Verdana, Geneva, sans-serif;
+      font-size: 14px;
+      color: #333;
+      margin-right: -30px; }
+
 .button {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -8356,6 +8387,8 @@ a {
             .catalog-page .catalog-tovar .info-main .price span {
               font-family: 'circle-bold', Verdana, Geneva, sans-serif;
               font-size: 16px; } }
+      .catalog-page .catalog-tovar .info-main .input-count {
+        margin-bottom: 30px; }
       .catalog-page .catalog-tovar .info-main .button {
         width: 255px;
         margin: 0; }
