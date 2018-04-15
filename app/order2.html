@@ -114,7 +114,94 @@
         <!-- **********************************************************************- -->
         <div class="min-height">
             <div class="container-fluid">
-                <h2 class="title-order">Корзина</h2>
+                <h2 class="title-order">ОФОРМЛЕНИЕ ЗАКАЗА</h2>
+                <div class="basket-end">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <h3>Данные получателя:</h3>
+                            <div class="user-input-wrapper mb-0">
+                                <label>Введите ваш Email <span class="red">*</span></label>
+                                <input type="email" class="user-input required" required name="user-mail"
+                                       placeholder="">
+                            </div>
+                            <div class="user-input-wrapper mt-1 ">
+                                <label></label>
+                                <div class="ch_wrapper yellow m-0">
+                                    <!-- можно поменять на type="radio" -->
+                                    <input id="user-check01" type="checkbox" name="user-check01" value="1" checked>
+                                    <label class="xs" for="user-check01">Подписаться на новости и акции</label>
+                                </div>
+                            </div>
+                            <div class="user-input-wrapper">
+                                <label>Введите Имя <span class="red">*</span></label>
+                                <input type="text" class="user-input required" required name="user-name" placeholder="">
+                            </div>
+                            <div class="user-input-wrapper">
+                                <label>Введите Отчество <span class="red">*</span></label>
+                                <input type="text" class="user-input required" required name="user-name2"
+                                       placeholder="">
+                            </div>
+                            <div class="user-input-wrapper">
+                                <label>Введите Фамилию <span class="red">*</span></label>
+                                <input type="text" class="user-input required" required name="user-name3"
+                                       placeholder="">
+                            </div>
+                            <div class="user-input-wrapper">
+                                <label>Введите Телефон <span class="red">*</span></label>
+                                <input type="text" class="user-input required" required name="user-phone"
+                                       placeholder="">
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <div class="pl-md-90">
+                                <h3>Способ оплаты</h3>
+                                <div class="ch_wrapper yellow mt-0 mb-3">
+                                    <input id="user-check02" type="radio" name="user-check-02" value="1" checked>
+                                    <label class="xl" for="user-check02">Банковской картой</label>
+                                </div>
+                                <div class="ch_wrapper yellow mt-0 mb-3">
+                                    <input id="user-check03" type="radio" name="user-check-02" value="0">
+                                    <label class="xl" for="user-check03">Наличные курьеру</label>
+                                </div>
+                                <div class="ch_wrapper yellow mt-0 mb-3">
+                                    <input id="user-check04" type="radio" name="user-check-02" value="0">
+                                    <label class="xl" for="user-check04">Курьеру картой</label>
+                                </div>
+                                <div class="ch_wrapper yellow mt-0 mb-3">
+                                    <input id="user-check05" type="radio" name="user-check-02" value="0">
+                                    <label class="xl" for="user-check05">В рассрочку</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="col-sm-12 col-md-6">
+                            <h3>Варианты доставки:</h3>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <div class="pl-md-90">
+                                <h3>Адрес доставки:</h3>
+                                <div class="user-input-wrapper">
+                                    <label>Индекс <span class="red">*</span></label>
+                                    <input type="text" class="user-input required" required name="user-address1" placeholder="">
+                                </div>
+                                <div class="user-input-wrapper">
+                                    <label>Область <span class="red">*</span></label>
+                                    <input type="text" class="user-input required" required name="user-address2" placeholder="">
+                                </div>
+                                <div class="user-input-wrapper">
+                                    <label>Город <span class="red">*</span></label>
+                                    <input type="text" class="user-input required" required name="user-address3" placeholder="">
+                                </div>
+                                <div class="user-input-wrapper">
+                                    <label>Адрес <span class="red">*</span></label>
+                                    <input type="text" class="user-input required" required name="user-address4" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </div>

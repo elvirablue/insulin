@@ -18,6 +18,14 @@
         position: relative;
         text-align: left;
         @include text-light(12px);
+        &.xs {
+            font-size: 11px!important;
+            color: #666!important;
+        }
+        &.xl {
+            font-size: 14px!important;
+            color: #333!important;
+        }
         @include media-breakpoint-down(xs) {
             font-size: 11px;
         }
@@ -45,13 +53,14 @@
         display: inline-block;
         width: 20px;
         height: 20px;
-        margin-right: 20px;
         position: absolute;
-        left: -40px;
-        top: -2px;        
-		border: 1px solid #999;
-        background-color: rgba(153, 153, 153, 0.1);
-        box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.26);
+        top: -2px;
+        border-radius: 5px;
+        background-color: #fff;
+        box-shadow: inset 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
+        border: 1px solid #bababa;
+        left: -30px;
+        margin-right: 0;
     }
 
 
@@ -62,14 +71,29 @@
     input[type=checkbox]:checked + label:before,
     input[type=radio]:checked + label:before {
         content: "\2713";
-        font-size: 13px;
+        font-size: 15px;
         font-weight: bold;
-        color: #999;
+        color: #333;
         text-align: center;
         line-height: 18px;
         font-weight: bold;
+    }
 
-        
+    &.yellow {
+        input[type=checkbox]:checked + label:before,
+        input[type=radio]:checked + label:before{
+            color: #fdbd1c;
+            font-size: 15px;
+            font-weight: bold;
+        }
+    }
+    &.red {
+        input[type=checkbox]:checked + label:before,
+        input[type=radio]:checked + label:before {
+            color: #d50808;
+            font-size: 15px;
+            font-weight: bold;
+        }
     }
 
     //input[type=radio]:checked + label:before {

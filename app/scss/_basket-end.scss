@@ -1,0 +1,59 @@
+.basket-end {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  h3 {
+    @include text-bold(24px);
+    padding-bottom: 20px;
+  }
+  .pl-md-90 {
+    padding-left: 90px;
+    @include media-breakpoint-down(md) {
+      padding-left: 30px;
+    }
+    @include media-breakpoint-down(sm) {
+      padding-left: 0;
+    }
+  }
+  .button {
+    display: flex;
+    margin: 50px auto;
+    min-width: 280px;
+    width: 280px;
+    @include media-breakpoint-down(sm) {
+      min-width: 200px;
+      max-width: 280px;
+      width: 100%;
+    }
+  }
+  .user-input-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    label {
+      @include text-norm(14px);
+      color: #333;
+      margin: 0;
+      .red {
+        @include text-bold(16px);
+        color: #d50808;
+      }
+    }
+  }
+  .user-input {
+    width: 230px;
+    height: 40px;
+    padding: 0 10px 0;
+    border: 1px solid #bababa;
+    @include text-norm(14px);
+    line-height: 40px;
+  }
+  .ch_wrapper {
+    width: 230px;
+    color: #666;
+    padding-left: 30px;
+  }
+
+}
