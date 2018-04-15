@@ -2,6 +2,10 @@
   display: block;
   min-height: $height-footer;
   margin-top: -$height-footer;
+  @include media-breakpoint-down(sm) {
+    min-height: $height-footer-xs;
+    margin-top: -$height-footer-xs;
+  }
   &.bg-light {
     background-color: $color-bg-light-footer;
   }

@@ -13,7 +13,10 @@
   background-size: cover;
   text-align: center;
   &.null {
-    min-height: 126px;
+    min-height: auto;
+    padding: 0;
+    background-image: linear-gradient(to right, #0067aa 0%, #2690c4 40%, #0067aa 100%);
+    background-position: center;
   }
   &.doctor, &.stock {
     min-height: 906px;

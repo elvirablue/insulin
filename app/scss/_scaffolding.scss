@@ -201,6 +201,20 @@ h1 {
     font-size: 36px;
   }
 }
+h1.title-page {
+  padding-top: 75px;
+  @include text-exbold(40px);
+  text-align: left;
+  letter-spacing: 0.5px;
+  @include media-breakpoint-down(md) {
+    padding-top: 45px;
+    font-size: 32px;
+  }
+  @include media-breakpoint-down(xs) {
+    padding-top: 25px;
+    font-size: 26px;
+  }
+}
 
 span.text-bg-blue {
   display: inline-block;
@@ -212,6 +226,33 @@ span.text-bg-blue {
   width: auto;
   background-color: #fdc432;
   padding: 0 12px 10px;
+}
+.text-yellow {
+  @include text-norm(12px);
+  color: #fbc23f;
+  @include media-breakpoint-down(sm) { font-size: 11px;}
+}
+.text-gray {
+  @include text-norm(12px);
+  color: #999;
+  @include media-breakpoint-down(sm) { font-size: 11px;}
+}
+.text-dark {
+  @include text-norm(12px);
+  color: #333;
+  @include media-breakpoint-down(sm) { font-size: 11px;}
+}
+.link-dark {
+  display: block;
+  width: 100%;
+  padding-top: 18px;
+  text-align: center;
+  @include text-bold(12px);
+  color: #999;
+  &:hover {
+    color: $color-title;
+    text-decoration: underline;
+  }
 }
 
 textarea {
@@ -286,6 +327,29 @@ a {
     display: block;
     padding-bottom: 10px;
   }
+}
+.bg-light-blue {
+  background-color: #effbfc;
+}
+.min-height {
+  min-height: calc(100vh - 127px - 208px);
+  @include media-breakpoint-down(lg) {
+    min-height: calc(100vh - 117px - 208px);
+  }
+  @include media-breakpoint-down(md) {
+    min-height: calc(100vh - 56px - 208px);
+  }
+  @include media-breakpoint-down(sm) {
+    min-height: calc(100vh - 56px - 320px);
+  }
+  @include media-breakpoint-down(xs) {
+    min-height: calc(100vh - 56px - 320px);
+  }
+}
+
+.bg-000 {
+  background: url("../img/2.jpg") center -126px no-repeat;
+  background-size: auto;
 }
 
 .no-bg {
