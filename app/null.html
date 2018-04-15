@@ -112,7 +112,12 @@
             </nav>
         </div>
         <!-- **********************************************************************- -->
-        <div class="bg-light-blue min-height">
+        <div class="min-height">
+            <div class="container-fluid">
+                <button class="button yellow mt-5" data-toggle="modal" data-target="#ModalOrder">Модалка Корзина</button>
+                <button class="button yellow mt-5 ml-4">Модалка Оформление</button>
+
+            </div>
 
         </div>
 
@@ -158,9 +163,9 @@
         </div>
     </footer>
 
-    <div class="modal fade" id="Modal2" tabindex="-1" role="dialog" aria-labelledby="ModalTitle"
+    <div class="modal fade bd-example-modal-lg" id="ModalOrder" tabindex="-1" role="dialog" aria-labelledby="ModalTitle"
          aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-dialog modal-dialog-centered modal-order" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -168,25 +173,156 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form class="form-main">
-                        <h2 class="title">Закажите обратный звонок
-                            <p class="after">Наш специалист подробно расскажет,
-                                как приобрести инсулиновую помпу</p>
-                        </h2>
-                        <input type="text" class="user-input required" required name="user-name"
-                               placeholder="Имя">
-                        <input type="text" class="user-input required" required name="user-phone"
-                               placeholder="+7 (___) ___ - ____">
-                        <button type="submit" class="button yellow">Заказать звонок</button>
-                        <div class="ch_wrapper">
-                            <!-- можно поменять на type="radio" -->
-                            <input id="user-check1" type="checkbox" name="user-check1" value="1" checked>
-                            <label for="user-check1">Я согласен <a href="#">с условиями</a> обработки
-                                персональных
-                                данных</label>
-                        </div>
-                        <input type="text" class="hidden" hidden value="Заказать обратный звонок">
-                    </form>
+                    <h2 class="title-order-modal">Корзина</h2>
+                    <div class="basket">
+                        <form action="" id="">
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th colspan="2">Товар</th>
+                                    <th>Цена</th>
+                                    <th>Количество</th>
+                                    <th></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="photo">
+                                            <img src="img/tovars/t1.png">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="name">1. MMT-754WWS Lorem ipsum dolor sit amet, consectetur adipisicing
+                                            elit. Dolor ex nulla !
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="price">1 100 Руб.</div>
+                                    </td>
+                                    <td>
+                                        <div class="input-count basket-count">
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <button class="btn btn-minus" type="button">-</button>
+                                                </div>
+                                                <input type="number" min="0" max="100" class="form-control" placeholder=""
+                                                       value="0">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-plus" type="button">+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="delete">Удалить</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="photo">
+                                            <img src="img/tovars/t1.png">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="name">1. MMT-754WWS Lorem ipsum dolor
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="price">1 100 Руб.</div>
+                                    </td>
+                                    <td>
+                                        <div class="input-count basket-count">
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <button class="btn btn-minus" type="button">-</button>
+                                                </div>
+                                                <input type="number" min="0" max="100" class="form-control" placeholder=""
+                                                       value="0">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-plus" type="button">+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="delete">Удалить</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="photo">
+                                            <img src="img/tovars/t1.png">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="name">
+                                            1. MMT-754WWS
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="price">1 100 Руб.</div>
+                                    </td>
+                                    <td>
+                                        <div class="input-count basket-count">
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <button class="btn btn-minus" type="button">-</button>
+                                                </div>
+                                                <input type="number" min="0" max="100" class="form-control" placeholder=""
+                                                       value="0">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-plus" type="button">+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="delete">Удалить</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="photo">
+                                            <img src="img/tovars/t1.png">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="name">
+                                            1. MMT-754WWS
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="price">1 100 Руб.</div>
+                                    </td>
+                                    <td>
+                                        <div class="input-count basket-count">
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <button class="btn btn-minus" type="button">-</button>
+                                                </div>
+                                                <input type="number" min="0" max="100" class="form-control" placeholder=""
+                                                       value="0">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-plus" type="button">+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="delete">Удалить</div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <div class="order-price">
+                                <span class="text-uppercase">Итого:</span>
+                                <span class="text-blue"><span id="sum">4 200</span> Руб.</span>
+                            </div>
+                            <button type="submit" class="button yellow arr-right">Оформить заказ</button>
+                            <input type="hidden" class="hidden" id="user-order-price" value="">
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

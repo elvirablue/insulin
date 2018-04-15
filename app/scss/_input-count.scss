@@ -30,4 +30,35 @@
       margin-right: -30px;
     }
   }
+  &.basket-count {
+    width: 95px;
+    background-color: #fff;
+    .input-group {
+      border: none;
+      background: none;
+      background-color: inherit;
+      .input-group-prepend,
+      .input-group-append {
+        background-color: inherit;
+        padding: 8px;
+        position: relative;
+        z-index: 10;
+      }
+      .form-control {
+        background-color: inherit;
+        line-height: 13px;
+      }
+      .btn {
+        padding: 0;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        border: 1px solid #999;
+        background-color: inherit;
+        font-size: 13px;
+        line-height: 13px;
+        font-weight: bold;
+      }
+    }
+  }
 }
