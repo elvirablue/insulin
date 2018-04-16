@@ -15,8 +15,10 @@
         display: inline-block;
         vertical-align: middle;
         cursor: pointer;
+        margin-bottom: 0!important;
         position: relative;
         text-align: left;
+        line-height: 20px;
         @include text-light(12px);
         &.xs {
             font-size: 11px!important;
@@ -25,6 +27,9 @@
         &.xl {
             font-size: 14px!important;
             color: #333!important;
+            @include media-breakpoint-down(sm) {
+                font-size: 13px !important;
+            }
         }
         @include media-breakpoint-down(xs) {
             font-size: 11px;
@@ -54,7 +59,7 @@
         width: 20px;
         height: 20px;
         position: absolute;
-        top: -2px;
+        top: 0;
         border-radius: 5px;
         background-color: #fff;
         box-shadow: inset 0px 0px 8px 0px rgba(0, 0, 0, 0.15);

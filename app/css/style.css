@@ -6282,8 +6282,10 @@ a {
     display: inline-block;
     vertical-align: middle;
     cursor: pointer;
+    margin-bottom: 0 !important;
     position: relative;
     text-align: left;
+    line-height: 20px;
     font-family: 'circle-regular', Verdana, Geneva, sans-serif;
     font-size: 12px; }
     .ch_wrapper label.xs {
@@ -6292,6 +6294,9 @@ a {
     .ch_wrapper label.xl {
       font-size: 14px !important;
       color: #333 !important; }
+      @media (max-width: 767.98px) {
+        .ch_wrapper label.xl {
+          font-size: 13px !important; } }
     @media (max-width: 575.98px) {
       .ch_wrapper label {
         font-size: 11px; } }
@@ -6313,7 +6318,7 @@ a {
     width: 20px;
     height: 20px;
     position: absolute;
-    top: -2px;
+    top: 0;
     border-radius: 5px;
     background-color: #fff;
     box-shadow: inset 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
@@ -8748,11 +8753,28 @@ a {
 .basket-end {
   width: 100%;
   max-width: 900px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-bottom: 70px; }
+  @media (max-width: 767.98px) {
+    .basket-end {
+      max-width: 400px; } }
+  @media (max-width: 575.98px) {
+    .basket-end {
+      max-width: 290px; } }
   .basket-end h3 {
     font-family: 'circle-bold', Verdana, Geneva, sans-serif;
     font-size: 24px;
     padding-bottom: 20px; }
+    @media (max-width: 767.98px) {
+      .basket-end h3 {
+        font-size: 18px;
+        padding-bottom: 10px;
+        padding-top: 20px;
+        border-top: 1px solid #d8d8d8;
+        margin-top: 10px; } }
+    @media (max-width: 575.98px) {
+      .basket-end h3 {
+        font-size: 17px; } }
   .basket-end .pl-md-90 {
     padding-left: 90px; }
     @media (max-width: 991.98px) {
@@ -8766,7 +8788,7 @@ a {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    margin: 50px auto;
+    margin: 0;
     min-width: 280px;
     width: 280px; }
     @media (max-width: 767.98px) {
@@ -8794,6 +8816,7 @@ a {
             align-items: center;
     margin-bottom: 20px; }
     .basket-end .user-input-wrapper label {
+      white-space: nowrap;
       font-family: 'circle-regular', Verdana, Geneva, sans-serif;
       font-size: 14px;
       color: #333;
@@ -8802,6 +8825,41 @@ a {
         font-family: 'circle-bold', Verdana, Geneva, sans-serif;
         font-size: 16px;
         color: #d50808; }
+    @media (max-width: 767.98px) {
+      .basket-end .user-input-wrapper {
+        margin-bottom: 12px; }
+        .basket-end .user-input-wrapper label {
+          font-size: 13px; }
+          .basket-end .user-input-wrapper label .red {
+            font-size: 14px; } }
+    @media (max-width: 575.98px) {
+      .basket-end .user-input-wrapper {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-flow: column nowrap;
+            -ms-flex-flow: column nowrap;
+                flex-flow: column nowrap;
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+            -ms-flex-align: start;
+                align-items: flex-start; }
+        .basket-end .user-input-wrapper label {
+          padding-bottom: 4px; } }
+  .basket-end .variant .ch_wrapper {
+    width: auto; }
+  .basket-end .variant p {
+    font-family: 'circle-regular', Verdana, Geneva, sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #a1a1a1;
+    padding-left: 30px; }
+    @media (max-width: 767.98px) {
+      .basket-end .variant p {
+        font-size: 11px; } }
   .basket-end .user-input {
     width: 230px;
     height: 40px;
@@ -8810,10 +8868,73 @@ a {
     font-family: 'circle-regular', Verdana, Geneva, sans-serif;
     font-size: 14px;
     line-height: 40px; }
+    @media (max-width: 991.98px) {
+      .basket-end .user-input {
+        max-width: 230px;
+        width: 200px; } }
+    @media (max-width: 767.98px) {
+      .basket-end .user-input {
+        font-size: 13px;
+        width: 230px; } }
+    @media (max-width: 575.98px) {
+      .basket-end .user-input {
+        min-width: 100%; } }
   .basket-end .ch_wrapper {
     width: 230px;
     color: #666;
     padding-left: 30px; }
+    @media (max-width: 767.98px) {
+      .basket-end .ch_wrapper {
+        font-size: 13px; } }
+  .basket-end .order-footer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row nowrap;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 30px 0;
+    margin-top: 30px;
+    border-top: 1px solid #d8d8d8; }
+    @media (max-width: 767.98px) {
+      .basket-end .order-footer {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-flow: column nowrap;
+            -ms-flex-flow: column nowrap;
+                flex-flow: column nowrap;
+        padding: 15px 0; } }
+  .basket-end .order-price {
+    display: block;
+    padding: 0 70px 0 0;
+    width: auto;
+    text-align: center;
+    white-space: nowrap;
+    font-family: 'circle-exbold', Verdana, Geneva, sans-serif;
+    font-size: 18px;
+    line-height: 1;
+    color: #999; }
+    @media (max-width: 991.98px) {
+      .basket-end .order-price {
+        font-size: 16px; } }
+    @media (max-width: 767.98px) {
+      .basket-end .order-price {
+        padding: 15px 0; } }
+    .basket-end .order-price .text-blue {
+      display: inline-block;
+      padding-left: 20px;
+      color: #607ff3; }
 
 .wrapper-x {
   overflow: hidden !important;

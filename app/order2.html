@@ -116,91 +116,142 @@
             <div class="container-fluid">
                 <h2 class="title-order">ОФОРМЛЕНИЕ ЗАКАЗА</h2>
                 <div class="basket-end">
-                    <div class="row">
-                        <div class="col-sm-12 col-md-6">
-                            <h3>Данные получателя:</h3>
-                            <div class="user-input-wrapper mb-0">
-                                <label>Введите ваш Email <span class="red">*</span></label>
-                                <input type="email" class="user-input required" required name="user-mail"
-                                       placeholder="">
-                            </div>
-                            <div class="user-input-wrapper mt-1 ">
-                                <label></label>
-                                <div class="ch_wrapper yellow m-0">
-                                    <!-- можно поменять на type="radio" -->
-                                    <input id="user-check01" type="checkbox" name="user-check01" value="1" checked>
-                                    <label class="xs" for="user-check01">Подписаться на новости и акции</label>
+                    <form action="" id="">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6">
+                                <h3>Данные получателя:</h3>
+                                <div class="user-input-wrapper mb-0">
+                                    <label>Введите ваш Email <span class="red">*</span></label>
+                                    <input type="email" class="user-input required" required name="user-mail"
+                                           placeholder="">
+                                </div>
+                                <div class="user-input-wrapper mt-1 ">
+                                    <label></label>
+                                    <div class="ch_wrapper yellow m-0">
+                                        <!-- можно поменять на type="radio" -->
+                                        <input id="user-check01" type="checkbox" name="user-check01" value="1" checked>
+                                        <label class="xs" for="user-check01">Подписаться на новости и акции</label>
+                                    </div>
+                                </div>
+                                <div class="user-input-wrapper">
+                                    <label>Введите Имя <span class="red">*</span></label>
+                                    <input type="text" class="user-input required" required name="user-name"
+                                           placeholder="">
+                                </div>
+                                <div class="user-input-wrapper">
+                                    <label>Введите Отчество <span class="red">*</span></label>
+                                    <input type="text" class="user-input required" required name="user-name2"
+                                           placeholder="">
+                                </div>
+                                <div class="user-input-wrapper">
+                                    <label>Введите Фамилию <span class="red">*</span></label>
+                                    <input type="text" class="user-input required" required name="user-name3"
+                                           placeholder="">
+                                </div>
+                                <div class="user-input-wrapper">
+                                    <label>Введите Телефон <span class="red">*</span></label>
+                                    <input type="text" class="user-input required" required name="user-phone"
+                                           placeholder="">
                                 </div>
                             </div>
-                            <div class="user-input-wrapper">
-                                <label>Введите Имя <span class="red">*</span></label>
-                                <input type="text" class="user-input required" required name="user-name" placeholder="">
-                            </div>
-                            <div class="user-input-wrapper">
-                                <label>Введите Отчество <span class="red">*</span></label>
-                                <input type="text" class="user-input required" required name="user-name2"
-                                       placeholder="">
-                            </div>
-                            <div class="user-input-wrapper">
-                                <label>Введите Фамилию <span class="red">*</span></label>
-                                <input type="text" class="user-input required" required name="user-name3"
-                                       placeholder="">
-                            </div>
-                            <div class="user-input-wrapper">
-                                <label>Введите Телефон <span class="red">*</span></label>
-                                <input type="text" class="user-input required" required name="user-phone"
-                                       placeholder="">
+                            <div class="col-sm-12 col-md-6">
+                                <div class="pl-md-90">
+                                    <h3>Способ оплаты</h3>
+                                    <div class="ch_wrapper yellow mt-0 mb-3">
+                                        <input id="user-check02" type="radio" name="user-check-02" value="1" checked>
+                                        <label class="xl" for="user-check02">Банковской картой</label>
+                                    </div>
+                                    <div class="ch_wrapper yellow mt-0 mb-3">
+                                        <input id="user-check03" type="radio" name="user-check-02" value="0">
+                                        <label class="xl" for="user-check03">Наличные курьеру</label>
+                                    </div>
+                                    <div class="ch_wrapper yellow mt-0 mb-3">
+                                        <input id="user-check04" type="radio" name="user-check-02" value="0">
+                                        <label class="xl" for="user-check04">Курьеру картой</label>
+                                    </div>
+                                    <div class="ch_wrapper yellow mt-0 mb-3">
+                                        <input id="user-check05" type="radio" name="user-check-02" value="0">
+                                        <label class="xl" for="user-check05">В рассрочку</label>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-md-6">
-                            <div class="pl-md-90">
-                                <h3>Способ оплаты</h3>
-                                <div class="ch_wrapper yellow mt-0 mb-3">
-                                    <input id="user-check02" type="radio" name="user-check-02" value="1" checked>
-                                    <label class="xl" for="user-check02">Банковской картой</label>
-                                </div>
-                                <div class="ch_wrapper yellow mt-0 mb-3">
-                                    <input id="user-check03" type="radio" name="user-check-02" value="0">
-                                    <label class="xl" for="user-check03">Наличные курьеру</label>
-                                </div>
-                                <div class="ch_wrapper yellow mt-0 mb-3">
-                                    <input id="user-check04" type="radio" name="user-check-02" value="0">
-                                    <label class="xl" for="user-check04">Курьеру картой</label>
-                                </div>
-                                <div class="ch_wrapper yellow mt-0 mb-3">
-                                    <input id="user-check05" type="radio" name="user-check-02" value="0">
-                                    <label class="xl" for="user-check05">В рассрочку</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="row mt-4">
-                        <div class="col-sm-12 col-md-6">
-                            <h3>Варианты доставки:</h3>
-                        </div>
-                        <div class="col-sm-12 col-md-6">
-                            <div class="pl-md-90">
-                                <h3>Адрес доставки:</h3>
-                                <div class="user-input-wrapper">
-                                    <label>Индекс <span class="red">*</span></label>
-                                    <input type="text" class="user-input required" required name="user-address1" placeholder="">
+                        <div class="row mt-md-4">
+                            <div class="col-sm-12 col-md-6">
+                                <h3>Варианты доставки:</h3>
+                                <div class="variant mb-3">
+                                    <div class="ch_wrapper red mt-0 mb-1">
+                                        <input id="user-check06" type="radio" name="user-check-03" value="1" checked>
+                                        <label class="xl" for="user-check06">Почта России - 149 руб.</label>
+                                    </div>
+                                    <p>
+                                        Только для заказов по России! <br> После отправки (3-4 рабочих дня) мы вышлем
+                                        Вам на
+                                        электронную почту
+                                        трек-код для отслеживания. В среднем по России посылка идёт 7-20 дней.
+                                    </p>
                                 </div>
-                                <div class="user-input-wrapper">
-                                    <label>Область <span class="red">*</span></label>
-                                    <input type="text" class="user-input required" required name="user-address2" placeholder="">
+                                <div class="variant mb-3">
+                                    <div class="ch_wrapper red mt-0 mb-1">
+                                        <input id="user-check07" type="radio" name="user-check-03" value="0">
+                                        <label class="xl" for="user-check07">Международная почта - 349 руб.</label>
+                                    </div>
+                                    <p>
+                                        Для заказов во все страны, кроме России! <br>
+                                        Доставка посылкой в любую страну мира. <br>
+                                        В среднем посылка идёт 10-16 дней.
+                                    </p>
                                 </div>
-                                <div class="user-input-wrapper">
-                                    <label>Город <span class="red">*</span></label>
-                                    <input type="text" class="user-input required" required name="user-address3" placeholder="">
+                                <div class="variant mb-3">
+                                    <div class="ch_wrapper red mt-0 mb-1">
+                                        <input id="user-check08" type="radio" name="user-check-03" value="0">
+                                        <label class="xl" for="user-check08">Курьерская доставка - 499 руб.</label>
+                                    </div>
+                                    <p>
+                                        Только для заказов по России! <br>
+                                        Курьер принесёт посылку Вам лично в руки. <br>
+                                        Время доставки зависит от удалённости вашего города
+                                    </p>
                                 </div>
-                                <div class="user-input-wrapper">
-                                    <label>Адрес <span class="red">*</span></label>
-                                    <input type="text" class="user-input required" required name="user-address4" placeholder="">
+                            </div>
+
+                            <div class="col-sm-12 col-md-6">
+                                <div class="pl-md-90">
+                                    <h3>Адрес доставки:</h3>
+                                    <div class="user-input-wrapper">
+                                        <label>Индекс <span class="red">*</span></label>
+                                        <input type="text" class="user-input required" required name="user-address1"
+                                               placeholder="">
+                                    </div>
+                                    <div class="user-input-wrapper">
+                                        <label>Область <span class="red">*</span></label>
+                                        <input type="text" class="user-input required" required name="user-address2"
+                                               placeholder="">
+                                    </div>
+                                    <div class="user-input-wrapper">
+                                        <label>Город <span class="red">*</span></label>
+                                        <input type="text" class="user-input required" required name="user-address3"
+                                               placeholder="">
+                                    </div>
+                                    <div class="user-input-wrapper">
+                                        <label>Адрес <span class="red">*</span></label>
+                                        <input type="text" class="user-input required" required name="user-address4"
+                                               placeholder="">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+
+                        <div class="order-footer">
+                            <div class=" order-price">
+                                <span class="">Итого:</span>
+                                <span class="text-blue"><span id="sum">4 200</span> Руб.</span>
+                            </div>
+                            <button type="submit" class="button yellow arr-right">Сделать заказ</button>
+                        </div>
+                        <input type="hidden" class="hidden" id="user-order-price" value="">
+                    </form>
                 </div>
 
             </div>
